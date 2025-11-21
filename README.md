@@ -1,7 +1,3 @@
-<div align="center">
-   <img width="100%" alt="Data Science Freshers 2025" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # Data Science Freshers 2025 — Vite + React App
 
 An interactive, neon-themed landing experience with a particle background, a hero entry animation, and a dashboard with schedule, menu, and venue details.
