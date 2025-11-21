@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
   ];
 
   return (
-    <div id="dashboard-container" className="w-full h-full overflow-y-auto p-4 md:p-8 pb-20 scroll-smooth">
+    <div id="dashboard-container" className="w-full min-h-screen p-4 md:p-8 pb-20 scroll-smooth">
       {/* Header */}
       <header className="flex flex-col md:flex-row justify-between items-end border-b border-neon/20 pb-6 mb-12 gap-4">
         <div>
@@ -100,7 +100,7 @@ const Dashboard: React.FC = () => {
                 <ul className="space-y-4">
                   {section.items.map((food, fIdx) => (
                     <li key={fIdx} className="flex items-center gap-3 font-mono text-gray-200 group">
-                      <span className="text-neon opacity-50 group-hover:opacity-100 transition-opacity">></span>
+                      <span className="text-neon opacity-50 group-hover:opacity-100 transition-opacity">&gt;</span>
                       <span className="group-hover:text-white group-hover:translate-x-1 transition-all duration-300">{food}</span>
                     </li>
                   ))}

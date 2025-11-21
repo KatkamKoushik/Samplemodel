@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <ParticleBackground />
 
       {/* Content Layer */}
-      <div className="relative z-10 w-full h-full">
+      <div className="relative z-10 w-full">
         
         {/* Hero Section - Fades out when entered */}
         <div 
@@ -32,14 +32,12 @@ const App: React.FC = () => {
           {!showDashboard && <Hero onEnter={handleEnterSystem} />}
         </div>
 
-        {/* Dashboard Section - Slides in when entered */}
-        <div 
-          className={`absolute inset-0 transition-all duration-1000 ease-out transform 
-            ${showDashboard ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
-          `}
-        >
-          {showDashboard && <Dashboard />}
-        </div>
+        {/* Dashboard Section - Render in normal flow for page scroll */}
+        {showDashboard && (
+          <div className="transition-opacity duration-700 ease-out opacity-100">
+            <Dashboard />
+          </div>
+        )}
 
       </div>
       
