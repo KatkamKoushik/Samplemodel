@@ -49,11 +49,11 @@ const Dashboard: React.FC = () => {
         {/* SECTION 1: SCHEDULE */}
         <section className="animate-[fadeIn_0.5s_ease-out]">
           <div className="flex items-center gap-4 mb-8">
-            <div className="h-px bg-neon/50 flex-grow box-shadow-[0_0_5px_#64ffda]"></div>
+            <div className="h-px bg-neon/50 flex-grow shadow-[0_0_5px_#64ffda]"></div>
             <h2 className="text-3xl font-display text-white tracking-widest">
               <span className="text-neon">01 //</span> SCHEDULE
             </h2>
-            <div className="h-px bg-neon/50 flex-grow box-shadow-[0_0_5px_#64ffda]"></div>
+            <div className="h-px bg-neon/50 flex-grow shadow-[0_0_5px_#64ffda]"></div>
           </div>
           
           <div className="grid grid-cols-1 gap-4">
